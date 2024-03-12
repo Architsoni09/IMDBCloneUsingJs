@@ -18,7 +18,7 @@ document.addEventListener('click', function (event) {
 // Switch the image every 5 seconds
 let slideIndex = 0;
 let intervalId = setInterval(() => {
-    if(movieDetailsShouldBeDisplayed===true) {
+    if(movieDetailsShouldBeDisplayed) {
         // Remove 'active' class from current active item
         const activeItem = document.querySelector('.carousel-item.active');
         activeItem.classList.remove('active');
@@ -270,6 +270,7 @@ function favouriteMoviesDisplayEventHandler() {
                ul.appendChild(li);
            });
            favouriteMoviesShouldBeDisplayed=false;
+           movieDetailsShouldBeDisplayed=false;
        }
    }
    else{
