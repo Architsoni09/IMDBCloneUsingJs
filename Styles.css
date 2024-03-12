@@ -1,0 +1,39 @@
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: 50vw; /* Set width to half of viewport width */
+    height: 100%; /* Fill the height of the carousel container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Center carousel content */
+.carousel-item {
+    text-align: center;
+}
+p, h5{
+    color: #ffc107;
+}
+#carouselExampleCaptions {
+    height: 92vh;
+}
+.listItem{
+height: 70px;
+}
+.favMovieHeader{
+    background-color: black;
+    color: #ffc107;
+    margin-top: 5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border: 2px #ffc107 solid;
+}
+a.disabled {
+    pointer-events: none;
+    color: #999; /* Change the color to visually indicate that it's disabled */
+    text-decoration: none; /* Optionally remove underline */
+    cursor: not-allowed;
+}
